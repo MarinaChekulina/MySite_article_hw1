@@ -1,0 +1,66 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'article/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'article/css/style.css' %}">
+    <script src="{% static 'article/js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'article/js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <a class="user_up_level_label" href="/">WI-FI Aware</a>
+    </div>
+</nav>
+
+<div class="jumbotron"></div>
+
+
+<h3>Contents</h3>
+<div class="col-md-7">
+    <nav>
+        <h3>
+            <a href="{% url 'eng1' %}">
+                1. What is it?
+            </a>
+        </h3>
+        <h3>
+            <a href="{% url 'eng2' %}">
+                2.Way of working + video
+            </a>
+        </h3>
+        <h3>
+            <a href="{% url 'eng3' %}">
+                3. Examples of usage
+            </a>
+        </h3>
+        <h3>
+            <a href="{% url 'eng4' %}">
+                4. Advantages
+            </a>
+        </h3>
+        <h3>
+            <a href="{% url 'eng5' %}">
+                5. Perspectives
+            </a>
+        </h3>
+    </nav>
+</div>
+<div class="col-md-5">
+    <img src="{% static 'article/images/cmap_eng.png' %}">
+</div>
+{#<p><img src="cmap.png"></p>#}
+<div class="col-md-12">
+    <div class="container">
+        {% block body %}{% endblock %}
+        <hr>
+        <footer>
+            <p>&copy; 2016 Chekulina Marina, BMSTU.</p>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

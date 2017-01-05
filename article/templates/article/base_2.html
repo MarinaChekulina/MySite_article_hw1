@@ -1,0 +1,49 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'article/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'article/css/style.css' %}">
+
+    <script src="{% static 'article/js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'article/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'article/js/form_script.js' %}"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="user_up_level_label" href="/">WI-FI Aware</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+
+            <button id="rus" type="submit" class="btn btn-success button_style">RUS</button>
+            <button id="eng" type="submit" class="btn btn-success button_style2">ENG</button>
+
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron"></div>
+
+<div class="container">
+    {% block body %}{% endblock %}
+    <hr>
+    <footer>
+        <p>&copy; 2016 Chekulina Marina, BMSTU.</p>
+    </footer>
+</div>
+</body>
+</html>

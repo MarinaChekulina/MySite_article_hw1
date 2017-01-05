@@ -1,0 +1,37 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Perspectives</title>
+</head>
+<body>
+<h3>Perspectives</h3>
+<style type="text/css">
+    body {
+        background-color: lightcyan;
+    }
+</style>
+<p align="center">Industry support for Wi-Fi Aware is widespread
+
+    Smartphones, tablets, and a variety of other consumer electronics products stand to benefit from the enhanced
+    capabilities of Wi-Fi Aware, and silicon vendors have begun to certify the core technology that will power
+    next-generation mobile devices.</p>
+<p>
+    The first Wi-Fi CERTIFIED Wi-Fi Aware products which form the test suite for the certification program are:
+</p>
+<ul>
+    <li>Broadcom BCM4358</li>
+    <li>Intel® Dual Band Wireless-AC 7260</li>
+    <li>Marvell Avastar 88W8897 802.11ac low power Wi-Fi combo chip</li>
+    <li>Realtek RTL8812AE 2x2 a/b/g/n/ac MiniCard</li>
+</ul>
+<div class="col-md-6">
+    <img src="{% static 'article/images/intel.jpg' %}">
+</div>
+<div class="col-md-6">
+    <img src="{% static 'article/images/broadcom.jpg' %}">
+</div>
+<p><input type="button" value="Назад" onclick="history.back()"></p>
+</body>
+</html>

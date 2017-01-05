@@ -1,0 +1,37 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Перспективы</title>
+</head>
+<body>
+<style type="text/css">
+    body {
+        background-color: lightcyan;
+    }
+</style>
+<h3>Перспективы</h3>
+<p>
+    Известно, что смартфоны, планшеты, а также ряд других продуктов потребительской электроники выиграют от расширенных
+    возможностей Wi-Fi, и производители кремния начали сертифицировать основные технологии, которые будут источниками
+    питания мобильных устройств следующего поколения.
+
+    Первые Wi-Fi CERTIFIED Wi-Fi Aware продукты, которые формируют набор тестов для программы сертификации являются:</p>
+<ul>
+    <li>Broadcom BCM4358</li>
+    <li>Intel® Dual Band Wireless-AC 7260</li>
+    <li>Marvell Avastar 88W8897 802.11ac low power Wi-Fi combo chip</li>
+    <li>Realtek RTL8812AE 2х2 A / B / G / N / акр MiniCard</li>
+</ul>
+<div class="col-md-3">
+    <img src="{% static 'article/images/intel.jpg' %}">
+</div>
+<div class="col-md-3">
+    <img src="{% static 'article/images/broadcom.jpg' %}">
+</div>
+
+<p><input type="button" value="Назад" onclick="history.back()"></p>
+
+</body>
+</html>
